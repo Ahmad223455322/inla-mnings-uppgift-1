@@ -7,7 +7,7 @@ inmatning={}
 #sekunder = time.time()
 #dangensdatum= time.ctime(sekunder)
 tidpunkt = datetime.datetime.now()
-
+d =""
 menyA = ["1.Skapa konto", "2.logga in på konto", "3.Avsluta"]
 menyB = ["1.Ta ut pengar", "2.Sätt in pengar", "3.Visa saldo","4.Avsluta"] 
 
