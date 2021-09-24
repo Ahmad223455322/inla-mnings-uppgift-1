@@ -1,7 +1,5 @@
 import datetime
 inmatning={}
-#sekunder = time.time()
-#dangensdatum= time.ctime(sekunder)
 tidpunkt = datetime.datetime.now()
 
 menyA = ["1.Skapa konto", "2.logga in på konto", "3.Avsluta"]
