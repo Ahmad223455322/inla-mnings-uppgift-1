@@ -1,9 +1,28 @@
-import datetime
-inmatning={}
-#sekunder = time.time()
-#dangensdatum= time.ctime(sekunder)
-tidpunkt = datetime.datetime.now()
+# telregister ={}
+# while True:
+  
+#   namn = input("vad har du för namn")
+#   telnr = input(f"vilket telfonnummer har du {namn}" )
+#   telregister[namn]= telnr 
+     
+#     if namn in telregister:
+#          print (" fnns redan") 
+#     else:
+#                 telnr = input(f"vilket telfinnummer har du{namn}")
+#                 telregister[namn]= telnr
+#     if len(telregister)== 5:
+#             break 
 
+#     print ("Telregister lookup")
+#     while True:
+
+#      namn = input("Ange namn:"
+#      if namn in dict:
+#       telnr = telregister[namn]
+#       print(f"Telnr:{telnr}")
+#      else :
+#          print("namet finns")
+inmatning={}
 menyA = ["1.Skapa konto", "2.logga in på konto", "3.Avsluta"]
 menyB = ["1.Ta ut pengar", "2.Sätt in pengar", "3.Visa saldo","4.Avsluta"] 
 
@@ -28,46 +47,36 @@ while True:
             continue        
         while vala == "2":
 
-            print(f"****KONTOMENY**** du är inloggad på kontot : {kontonummer}")
+            print("****KONTOMENY****")
             for x in menyB:
                print(x)
             valb=input("Ange meny val") 
             if valb == "4":
-                   break
-                
-        
+                break 
             if valb == "1":
                 belopp = int(input("Ange belopp"))
-                if belopp > inmatning[kontonummer] or belopp <= 0:
+                if belopp > inmatning[kontonummer]:
                     print("Beloopet är större än saldot")
                 else:
-                    inmatning[kontonummer] -= belopp
-                    fil= open(f'{kontonummer}.txt',"a")
-                    fil.write(f" Din saldo är *** {inmatning[kontonummer]}Kr *** \n -Utgaget belopp är {belopp}Kr *** Datum: {tidpunkt} \n")
+                    inmatning[kontonummer] =  inmatning[kontonummer] - belopp
+                    fil= open('demo.txt',"a")
+                    fil.write(f"Tog ut {belopp}\n")
                     fil.close()
             if valb == "2":
                 belopp = int(input("Ange belopp"))
-                inmatning[kontonummer] += belopp
-                fil= open(f'{kontonummer}.txt',"a")
-                fil.write(f" Din saldo är *** {inmatning[kontonummer]}Kr *** \n -insätning på {belopp}Kr *** Datum:  {tidpunkt} \n")
+                inmatning[kontonummer] =  inmatning[kontonummer] + belopp
+                fil= open('demo.txt',"w")
+                fil.write(f"satt in {belopp}")
                 fil.close()
                 
             elif valb== "3":
         
                 print(f"Saldo är{inmatning[kontonummer]}")
             
+      
+
     elif vala== "3":
         break
     else: 
-        print("Du har angett fel val, vänligen försök igen")
+        print("Du har angett fel val, vänligen förs")
 
-
-
-
-
-    
-
-    
-        
-
-    
