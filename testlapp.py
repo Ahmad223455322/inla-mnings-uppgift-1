@@ -153,19 +153,175 @@
 #     else:
 #         andrabokstav = False      
 
-namn = "leif stefan holmberg" #Leif Stefan Holmberg
-nyttNamn = ""
-FirstLetter = True
-LastLetterWasSpace = False
+# namn = "leif stefan holmberg" #Leif Stefan Holmberg
+# nyttNamn = ""
+# FirstLetter = True
+# LastLetterWasSpace = False
 
-for bokstav in namn:
-    if FirstLetter == True or LastLetterWasSpace == True:
-        nyttNamn = nyttNamn + bokstav.upper()
-    else:
-        nyttNamn = nyttNamn + bokstav
-    FirstLetter = False
-    if bokstav == " ":
-        LastLetterWasSpace = True
-    else:
-        LastLetterWasSpace = False
-print(nyttNamn)        
+# for bokstav in namn:
+#     if FirstLetter == True or LastLetterWasSpace == True:
+#         nyttNamn = nyttNamn + bokstav.upper()
+#     else:
+#         nyttNamn = nyttNamn + bokstav
+#     FirstLetter = False
+#     if bokstav == " ":
+#         LastLetterWasSpace = True
+#     else:
+#         LastLetterWasSpace = False
+# print(nyttNamn)        
+
+# namn = "ahmad samir zarzar"
+# förstabokstav = True
+# sistabokstav_varståns =False
+# nuynamn= ""
+
+# for bokstav in namn:
+#     if förstabokstav == True or sistabokstav_varståns == True:
+#         nuynamn = nuynamn + bokstav.upper()
+#     else:
+#         nuynamn= nuynamn + bokstav
+#     förstabokstav = False
+#     if bokstav == " ":
+#         sistabokstav_varståns= True
+#     else:
+#         sistabokstav_varståns = False
+# print(nuynamn)           
+# namn="Ahmad Samir Zarzar "
+# förstbokt= False
+# sitsainan_sapce= True
+# nyttnamn=""
+
+# for bokstav in namn:
+#     if förstbokt == False or sitsainan_sapce == False:
+#         nyttnamn+= bokstav.lower()
+#     else:
+#         nyttnamn+= bokstav
+#     förstbokt = True
+#     if bokstav== " ":
+#         sitsainan_sapce = False
+#     else:
+#         sitsainan_sapce = True
+# print(nyttnamn)         
+# # 
+# text = "Detta är en sträng som du skall ändra"   
+# blanteket = "*"
+# space = True
+# ny_text= ""
+# for bokostav in text:
+#     if bokostav == " ":
+#         space == True
+#         ny_text=ny_text +  blanteket
+#     else:
+#         ny_text= ny_text + bokostav
+# antal=0  
+# for särna in ny_text:
+#     if särna== "*":
+#         antal+=1
+# print(antal)       
+
+#Be användaren mata in en mailadress. Programmet skall kontrollera att inmatningen är
+
+# rätt dvs att det finns ett @ tecken och att det finns en . med 2 eller 3 tecken efter.
+
+# Meddela användaren om det är rätt eller felaktig adress
+
+
+
+
+
+# while True:
+#     x='@'
+#     y='.'
+#     email = input("Mata in en epostadress")
+#     index = email.find("@")
+#     indexOfDot = email.rfind(".")
+#     antalAfterDot = len(email) - indexOfDot - 1
+#     if x in email and y in email:
+#         print("ok")
+#     if index == -1 or indexOfDot == -1 or  antalAfterDot < 2 or antalAfterDot > 3:
+#         print("Invalid epostadress")
+#     else:
+#         break
+
+
+
+
+
+# Gör ett program där användaren får mata in en mening t ex ”Detta är min text
+
+# som jag matar in”. Programmet skall räkna ut hur många ord meningen består av
+
+# och meddela användaren om detta.
+
+
+# min_tex ="Detta är min text som jag matar in"
+
+# antalord=1
+# for ord in min_tex:
+#     if ord ==" ":
+#       antalord+= 1
+# print(antalord)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
