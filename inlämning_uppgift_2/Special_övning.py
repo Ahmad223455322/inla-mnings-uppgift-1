@@ -133,7 +133,7 @@ lista.sort()
 [print(x)for x in lista]
 lista.sort(reverse= True)
 [print(x)for x in lista]                     
-
+print("sdcd")
 
 
     
