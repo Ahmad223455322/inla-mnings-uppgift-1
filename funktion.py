@@ -1,3 +1,5 @@
+
+#labb 1
 # def plusastringd(string1 , string2):
 #     r = string1 +string2
 #     return r
@@ -6,42 +8,42 @@
 # resutat= plusastringd(a,b)
 
 # print(resutat)
-
+# #labb 2
 # def räknamoms (momsvärde , priset):
 #     summa= momsvärde * priset
 #     return summa
 # moms= float(input("Ange moms värde"))
-# priset = int(input("ange priset"))
-# momsvärde= räknamoms(moms,priset)
-# print(momsvärde)
+# pris= int(input("ange priset"))
+# momsvärd= räknamoms(moms,pris)
+# print(f' momms ligger på {momsvärd}kr på denna varan')
 
+#labb 3
 # def IsMyndig(age):
 #     if age >= 18:
-#         return False
+#         return(f"Om du är {age} år du är myndig")
 #     elif age < 18:
-#         return True
+#         return(f"Om du är {age} år du är inte myndig")
 
-# age = int(input("Ange ålder"))
-# txt = "myndig"
-# if IsMyndig(age):
-#     txt = "ej " + txt
-# print(f"Om du är {age} år är du {txt}")
+# ålder = int(input("Ange ålder"))
+# re= IsMyndig(ålder)
+# print(re)
 
+#labb 4
+def längst (ordlist):
+    längst = ""
+    for i in ordlist:
+        if len(i) > len(längst):
+          längst = i
+    return längst
 
-# def längst (ordlist):
-#     längst = " "
-#     for i in ordlist:
-#         if len(i) > len(längst):
-#           längst = i
-#     return längst
-
-# # minlista= ["fvsdvv","sfvfdv","sdvrrrrr"]    
-# # print(längst(minlista))        
+minlista= ["fvsdvv","sfvfdv","sdvrrrrr"]    
+print(längst(minlista))        
 
 
 # papslista =[ "dfgfv","dfbdfbvv","gbfbdfvvfdvfvfd","zdfv"]
 # print (längst(papslista))
 
+#labb 5
 
 # def CalculateTaxesOnSalary (lön):
 #    if lön >= 30000:
@@ -57,7 +59,7 @@
 # Skapa en metod som heter ToPercentage. Användaren skall mata in ett decimaltal mellan 1 och 0.
 # Metoden omvandlar talet till procent tex skall 0.5 bli 50%.
 
-
+#labb 6
 # def tillprosent(inmatninig):
 #     procent= inmatninig * 100
 
@@ -74,7 +76,7 @@
 
 
 
-
+#labb 7
 
 # def vokal (vokallista):
 #     for bokstav in text:
@@ -90,7 +92,7 @@
 
 
 
-
+#labb 8
    
 
 
@@ -99,3 +101,19 @@
 #     return letter in vowels
 # svar = IsVowel(letter) 
 # print (svar)  
+
+
+
+
+
+#test efter labbar
+
+
+
+# def min_fun(*lista):
+#     meny_list=["1Ta ut pengar", "2- Sätt in pengar", "3-Avsluta"]
+#     for objekt in meny_list:
+#       return lista
+    
+# resultar = min_fun(object)
+# print(resultar)
