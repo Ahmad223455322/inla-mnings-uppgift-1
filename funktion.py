@@ -29,15 +29,15 @@
 # print(re)
 
 #labb 4
-def längst (ordlist):
-    längst = ""
-    for i in ordlist:
-        if len(i) > len(längst):
-          längst = i
-    return längst
+# def längst (ordlist):
+#     längst = ""
+#     for i in ordlist:
+#         if len(i) > len(längst):
+#           längst = i
+#     return längst
 
-minlista= ["fvsdvv","sfvfdv","sdvrrrrr"]    
-print(längst(minlista))        
+# minlista= ["fvsdvv","sfvfdv","sdvrrrrr"]    
+# print(längst(minlista))        
 
 
 # papslista =[ "dfgfv","dfbdfbvv","gbfbdfvvfdvfvfd","zdfv"]

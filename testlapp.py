@@ -234,7 +234,8 @@
 #     y='.'
 #     email = input("Mata in en epostadress")
 #     index = email.find("@")
-#     indexOfDot = email.rfind(".")
+#     indexOfDot = email.find(".")
+#     d = len(email)
 #     antalAfterDot = len(email) - indexOfDot - 1
 #     if x in email and y in email:
 #         print("ok")

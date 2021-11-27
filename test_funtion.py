@@ -100,10 +100,10 @@ text = 'fannay'
 
 for bokstav in text:
     if bokstav in y:
-        x+= " "+bokstav
+        text=text.replace(bokstav,"l")
     else:
         x+= bokstav
-print(x)        
+print(text)        
 
 
         

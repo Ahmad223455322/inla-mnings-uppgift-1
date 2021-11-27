@@ -50,46 +50,56 @@
 #Fråga 2
 
 # from datetime import date
-# datum= input("Skriv in datum: <YYYY><MM><DD>")
+# while True:
+#     datum= input("Skriv in datum: <YYYY><MM><DD>")
 
-# datum=datum.split(" ")
+#     datum=datum.split(" ")
 
-# år=int(datum[0])
+#     år=int(datum[0])
 
-# månad=int(datum[1])
+#     månad=int(datum[1])
 
-# dag=int(datum[2])
+#     dag=int(datum[2])
 
-
-
-# d0 = date(år, månad, dag)
-
-# d1 = date(år, 12, 20)
-
+# om man vill om vandla sträng till lista för underlätta och indexera 
+# det man får från användaren om det är mer en variabel och en sträng
+# då kan man göra på det sättet ovan på 
 
 
-# if dag > 20 and månad==12:
+    # d0 = date(år, månad, dag)
 
-#     d1=date(år+1, 12, 20)
+    # d1 = date(år, 12, 20)
 
-#     delta = d1-d0
 
-#     print(delta.days)
 
-# else:
+    # if dag > 20 and månad==12:
 
-#     delta = d1 - d0
+    #     d1=date(år+1, 12, 20)
 
-#     print(delta.days)
+    #     delta = d1-d0
+
+    #     print(delta.days)
+
+    # else:
+
+    #     delta = d1 - d0
+
+    #     print(delta.days)
+    
+
+
 
 #Fråga 3 
 
+# kom ihåg att kolla på frågan ordentlig och läs igenom det.
+# 
+
 # def  filterContains(inlst,filter):
 #     resultat=[]
-#     for x in filter:
-#         for i in inlst:
-#             if (x) in (i):
-#                 resultat.append(i)
+#     for carakter in filter:
+#         for ord in inlst:
+#             if (carakter) in (ord):
+#                 resultat.append(ord)
 #     return (resultat)
 
 
@@ -117,23 +127,27 @@
 
 # "Ingen aning",
 
-# "Ja vad bra"]
+# "Ja vad bra",
+# "du är ful"]
 
 # def randdom_svar(lista):
 #     x = random.choice(lista)
 #     return x
 
 # while True:
-#     svar= input("skriv något")
-#     print(randdom_svar(lista))  
+#     svar= input("Hur kan jag hjälpa dig")
+#     print(f'chatbot: {randdom_svar(lista)}')  
 
 
+
+#Fråga 5
 lista=[12,44,5,-5,553]
 lista.sort()
 [print(x)for x in lista]
-lista.sort(reverse= True)
+print(50 *"*")
+lista.sort(reverse=True)
 [print(x)for x in lista]                     
-print("sdcd")
+
 
 
     
@@ -146,5 +160,8 @@ print("sdcd")
 # for i in range (7):
 #     print(veckodag[i]+ ':  '+ random.choice(middag))
 
-# # for i in range(11):
-#     print(i-1)
+# for i in range(10,0,-1):
+#     print(i)
+
+
+
