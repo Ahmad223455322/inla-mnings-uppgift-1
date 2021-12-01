@@ -185,7 +185,7 @@
 # def GetAnimalName( minChars, maxChars ):
 #     import random
 #     lista = ["MacGyver","MacGonagall","MacDonald","Macahan","MacThurbo","Pascal","Pilot","PingPong", "Kristall","Pucko", "Prinsessa","Bubblan","Fjollan", "Filur", "Baron von Münchausen","Tiny Toledo","Zelda","Miss Maxina", "Zolita", "Oscar", "Leya",  "Tequila",  "Sunrise", "Bruce", "Lennart", "Greger", "Gunnar", "Gunnel","Blåbär","Billy","Bob","Sigbritt" ]
-#     nylista=[]
+#     nylista=[]<
 #     for animal in lista:
 #         if len(animal) > int(minChars) and len(animal)  < int(maxChars):
 #             nylista.append(animal)
@@ -604,6 +604,27 @@
 
 
 
-# inm=int(input("mata in"))
-# for x in range(inm):
-#     print("Hej")
+def bytaplatspåord(lista:list)->list:
+    nylista=[]
+    firstord= True
+    for ord in lista:
+        if firstord== True:
+            uddaindex= ord
+            firstord = False
+        else:
+            nylista.append(ord) 
+            nylista.append(uddaindex)
+            firstord = True
+    return nylista
+lista=[]
+while True:
+    inmatning= input("mata ord i lista")
+    lista.append(inmatning)
+    print(bytaplatspåord(lista))
+
+
+
+
+
+
+
