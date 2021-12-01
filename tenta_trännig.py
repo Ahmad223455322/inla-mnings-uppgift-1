@@ -407,6 +407,3 @@
 # a=input("mata in ")
 # print(sumalldigit(a))            
 
-a=[1,2]
-for x in a:
-    print(next(x))
