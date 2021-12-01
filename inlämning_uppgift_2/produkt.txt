@@ -1,2 +1,0 @@
-200, 12.50, kilo, Banan
-123, 25.00, ask,  Jordgubb

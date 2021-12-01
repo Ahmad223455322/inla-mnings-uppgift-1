@@ -57,11 +57,11 @@
 # for tal in tal_lista:
 #     if tal < 9 and  tal > 3:
 #         print(tal)
-#         print(20*"*")        
+# print(20*"*")        
 
-#     for siffra in tal_lista:
-#         if siffra not in ny_lista:
-#             ny_lista.append(siffra)
+# for siffra in tal_lista:
+#     if siffra  not in ny_lista:
+#         ny_lista.append(siffra)
 # ny_lista.sort(reverse=True)
 # for item in ny_lista:
 #     print(item)    
@@ -118,11 +118,11 @@
 #         self._birthday = birthday
     
  
-#     def getnamn(self):
+#     def getnamn(self)->str:
 #         return self._namn
 
 
-#     def räkna_antal_dagar(self):
+#     def räkna_antal_dagar(self)->int:
        
 #         nu_tid= datetime.now()
 #         födelse =datetime.strptime(self._birthday,"%Y-%m-%d")
@@ -131,14 +131,14 @@
 
     
 
-# svar = int(input("Mata in antal personer"))
+# svar = int(input("antal personer"))
 # i = 1
 
 # personer_lista :list [Person] = []
 # while i < svar+1:
  
-#     inmatning = Person (input(f"Namn på person {i}: "),input(f"Födelsedatum på person {i}:"))
-#     personer_lista.append(inmatning)  
+#     person1 = Person (input(f"Namn på person {i}: "),input(f"Födelsedatum på person {i}:"))
+#     personer_lista.append(person1)  
 #     i =i+1
 # toatal_dagar = 0
 # for person in personer_lista:
@@ -146,7 +146,7 @@
 #    toatal_dagar+=antal_dagar
 #    print(f'{person.getnamn()} är {antal_dagar}antal dagar gammal')
     
-# print(f'De är tillsammans {toatal_dagar} dagar gamla')   
+#    print(f'De är tillsammans {toatal_dagar} dagar gamla')   
    
 
 
@@ -189,12 +189,13 @@
 #     for animal in lista:
 #         if len(animal) > int(minChars) and len(animal)  < int(maxChars):
 #             nylista.append(animal)
-#     if len (nylista) == 0:
-#         return " "
-#     else:        
-#         slump=random.choice(nylista)
-#         return slump
+#             slump=random.choice(nylista)
+#             return slump
 
+#     if len (nylista) == 0:
+#           return " "
+       
+       
 # while True:
   
 #     a =input("mata in minChars") 
@@ -603,6 +604,6 @@
 
 
 
-inm=int(input("mata in"))
-for x in range(inm):
-    print("Hej")
+# inm=int(input("mata in"))
+# for x in range(inm):
+#     print("Hej")

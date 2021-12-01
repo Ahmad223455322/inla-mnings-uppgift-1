@@ -27,7 +27,7 @@
 # print(rensa_dålgaord(x))    
 
 
-# fråga 3
+# # fråga 3
 # def IsValidPassword(password):
 #     passwordLength= len(password)
 #     if passwordLength >= 8:
@@ -131,15 +131,16 @@
 #     bokstavlista =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 #     siffror = ['1','2','3','4','5','6','7','8','9','0']
 #     for x in range(0,3):
-#         if reg_nummer[x] not in bokstavlista:
-#             return "Nej"
-#         else:
+#         if x == 2:
 #             for x in range(3,5):
 #                 if reg_nummer[x]  not in siffror:
 #                     return "Nej"
 #                 else:
 #                     if reg_nummer[5] in bokstavlista or reg_nummer[5] in siffror:
 #                         return "Ja"   
+#         if reg_nummer[x] not in bokstavlista:
+#             return "Nej"
+        
 
 # a = input("mata in ")
 # print(giltig(a))                        
@@ -362,7 +363,7 @@
 
 
 
-#Fråga 1
+# #Fråga 1
 # from datetime import datetime
 
 # class Bilannons:
@@ -376,7 +377,7 @@
 
 #     def setstartdatum(self,startdatum:datetime):
 #         self._startdatum = startdatum
-
+    
     
 #     def setslutdatum(self,slutdatum:datetime):
 #         self._slutdatum = slutdatum
@@ -398,8 +399,8 @@
 #                 return self._pris * 0.8 
 #         return  self._pris  
 
-#     def includ_black_friyd(self,iclude:bool):
-#         self.blakfride= iclude
+#     def includ_black_friyd(self,inklude:bool):
+#         self.blakfride= inklude
 
 
 

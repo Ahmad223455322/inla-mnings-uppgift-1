@@ -236,7 +236,7 @@
 #     index = email.find("@")
 #     indexOfDot = email.find(".")
 #     d = len(email)
-#     antalAfterDot = len(email) - indexOfDot - 1
+#     antalAfterDot = d - indexOfDot - 1
 #     if x in email and y in email:
 #         print("ok")
 #     if index == -1 or indexOfDot == -1 or  antalAfterDot < 2 or antalAfterDot > 3:

@@ -33,7 +33,7 @@ class Account:
     def getsaldo(self)->int:
         return self._saldo  
 
-    def setsaldo(self,saldo):
+    def setsaldo(self,saldo:int):
         self.setsaldo =saldo
         return saldo
               
